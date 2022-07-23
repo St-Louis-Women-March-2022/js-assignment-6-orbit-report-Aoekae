@@ -15,20 +15,8 @@ export class OrbitCountsComponent implements OnInit {
   ngOnInit() {
   }
 
-  countByType(type: string): number [] {
+  countByType(type: string): number {
 
-// 	let count = 0;
-// 	if (this.satellites) {
-// 	  for (let index = 0; index < this.satellites.length; index++) {
-// 		 if (this.satellites[index].type === type) {
-// 			count++;
-// 		 }
-// 	  } 
-// 	}
-// 	return count;
-//  }
-
-// totalCount (type: string): number[] {
 	let totalCountArray: number[]= [];
 	let total: number = 0;
 	let communication: number = 0;
@@ -62,8 +50,7 @@ export class OrbitCountsComponent implements OnInit {
 		total = communication + probe + positioning + spaceDebris + spaceStation + telescope;
 		totalCountArray.push(communication, probe, positioning, spaceDebris, spaceStation, telescope, total)
 	 }
-console.log(totalCountArray)
-return totalCountArray;
+return total;
 
 } 
 // 4) Counting Satellites
