@@ -1,6 +1,9 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
-</div>
+	<!-- <div *ngFor="let satellite of satellites">Total 
+	: <span [class.count]="{{totalCount(satellites)}}"> {{totalCount(satellites)}} </span></div> -->
 
-<!-- TODO 4: add logic to count number of satellites displayed -->
+	<div *ngIf="satellites.length!==0">Total 
+		: <span [class.count]="totalCount(satellites)"> {{totalCount(satellites)[6]}}   </span>
+</div>
+</div>
