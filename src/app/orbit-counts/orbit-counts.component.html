@@ -4,6 +4,6 @@
 	: <span [class.count]="{{totalCount(satellites)}}"> {{totalCount(satellites)}} </span></div> -->
 
 	<div *ngIf="satellites.length!==0">Total 
-		: <span [class.count]="totalCount(satellites)"> {{totalCount(satellites)[6]}}   </span>
+		: <span [class.count]="countByType(satellites)"> {{countByType(satellites)[6]}}   </span>
 </div>
 </div>

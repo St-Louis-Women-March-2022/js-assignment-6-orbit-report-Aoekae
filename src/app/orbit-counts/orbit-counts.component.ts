@@ -15,20 +15,20 @@ export class OrbitCountsComponent implements OnInit {
   ngOnInit() {
   }
 
-  countByType(type: string): number {
+  countByType(type: string): number [] {
 
-	let count = 0;
-	if (this.satellites) {
-	  for (let index = 0; index < this.satellites.length; index++) {
-		 if (this.satellites[index].type === type) {
-			count++;
-		 }
-	  } 
-	}
-	return count;
- }
+// 	let count = 0;
+// 	if (this.satellites) {
+// 	  for (let index = 0; index < this.satellites.length; index++) {
+// 		 if (this.satellites[index].type === type) {
+// 			count++;
+// 		 }
+// 	  } 
+// 	}
+// 	return count;
+//  }
 
-totalCount (type: string): number[] {
+// totalCount (type: string): number[] {
 	let totalCountArray: number[]= [];
 	let total: number = 0;
 	let communication: number = 0;
