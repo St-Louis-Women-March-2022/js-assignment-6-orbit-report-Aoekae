@@ -32,24 +32,4 @@ export class OrbitCountsComponent implements OnInit {
 		}
 	} return count;
   }
-  
-// setBooleans () {
-// 	if (this.satellites) {
-// 		for (let index=0; index < this.satellites.length; index++){
-// 			if (this.satellites[index].type==="Communication") {
-// 				this.isCommunication=true;
-// 			} if (this.satellites[index].type==="Probe") {
-// 				this.isProbe=true;
-// 			} if (this.satellites[index].type==="Positioning") {
-// 				this.isPositioning=true;
-// 			} if (this.satellites[index].type==="Telescope") {
-// 				this.isTelescope=true;
-// 			} if (this.satellites[index].type==="Space Debris") {
-// 				this.isSpaceDebris=true;
-// 			} if (this.satellites[index].type==="Space Station") {
-// 				this.isSpaceStation=true;
-// 			}
-// 		}
-// 	}
-//   }
 }
