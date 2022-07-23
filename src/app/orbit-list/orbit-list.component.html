@@ -6,7 +6,7 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row" *ngFor = "let satellite of satellites">
+    <tr class="data-row" *ngFor="let satellite of satellites; let even=even; let odd=odd;" [ngClass]="{odd:odd, even:even}">
         <td>{{satellite.name}}</td>
         <td [class.warning]="satellite.isSpaceDebris(satellite.type)">{{satellite.type}}</td>
         <td>{{satellite.operational}}</td>
