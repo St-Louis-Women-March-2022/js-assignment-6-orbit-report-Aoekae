@@ -1,9 +1,22 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<!-- <div *ngFor="let satellite of satellites">Total 
-	: <span [class.count]="{{totalCount(satellites)}}"> {{totalCount(satellites)}} </span></div> -->
+	<div>Total: 
+		 <span *ngIf="satellites" [class.count]="satellites.length">{{satellites.length}}</span></div>
 
-	<div *ngIf="satellites.length!==0">Total 
-		: <span [class.count]="countByType(satellites)"> {{countByType(satellites)}}   </span>
-</div>
+
+		 <div>Communication: 
+			<span [class.count]="countByType('Communication')" > {{countByType("Communication")}} </span> </div>
+		<div> Probe: 
+	<span [class.count]="countByType('Probe')" > {{countByType("Probe")}} </span> </div>
+	<div> Positioning: 
+	<span [class.count]="countByType('Positioning')" > {{countByType("Positioning")}} </span> </div>
+	<div> Telescope: 
+	<span [class.count]="countByType('Telescope')" > {{countByType("Telescope")}} </span> </div>
+	<div> Space Debris: 
+	<span [class.count]="countByType('Space Debris')" > {{countByType("Space Debris")}} </span> </div>
+	<div> Space Station:  
+	<span [class.count]="countByType('Space Station')" > {{countByType("Space Station")}} </span> </div>
+
+
+
 </div>
