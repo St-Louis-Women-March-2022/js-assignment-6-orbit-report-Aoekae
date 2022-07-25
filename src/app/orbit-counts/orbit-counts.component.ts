@@ -25,59 +25,6 @@ export class OrbitCountsComponent implements OnInit {
 		}
 	} return count;
   }
-  
-	isSpaceDebris(type: string): boolean {
 
-		if (type === "Space Debris"){
-			return true;
-	} else {
-			return false;
-	}
-	} 
-
-	isSpaceStation(type: string): boolean {
-
-		if (type === "Space Station"){
-			return true;
-	} else {
-			return false;
-	}
-	} 
-
-	isCommunication(type: string): boolean {
-
-		if (type === "Communication"){
-			return true;
-	} else {
-			return false;
-	}
-	} 
-	isProbe(type: string): boolean {
-
-		if (type === "Probe"){
-			return true;
-	   } else {
-			return false;
-	   }
-	} 
-	
-	isTelescope(type: string): boolean {
-
-		if (type === "Telescope"){
-			return true;
-	   } else {
-			return false;
-	   }
-	} 
-
-		
-	isPositioning(type: string): boolean {
-
-		if (type === "Positioning"){
-			return true;
-	   } else {
-			return false;
-	   }
-	} 
-
+  typeArray: string[]=["Communication", "Probe", "Positioning", "Telescope", "Space Debris", "Space Station"];
 }
