@@ -25,6 +25,5 @@ export class OrbitCountsComponent implements OnInit {
 		}
 	} return count;
   }
-
   typeArray: string[]=["Communication", "Probe", "Positioning", "Telescope", "Space Debris", "Space Station"];
 }
