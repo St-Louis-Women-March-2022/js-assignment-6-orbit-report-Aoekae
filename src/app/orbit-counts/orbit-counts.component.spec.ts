@@ -34,17 +34,17 @@ describe('OrbitCountsComponent', () => {
   it('conditionally counts how many satellites are displayed', () => {
 	component.satellites = [new Satellite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true)];
 	fixture.detectChanges();
-	let counts = element.query(By.css('.counts'));
+	let counts = element.query(By.css('.counts-total'));
 	expect(counts.nativeElement.innerHTML).toBe('1');
 
 	component.satellites = [new Satellite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true), new Satellite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true)];
 	fixture.detectChanges();
-	counts = element.query(By.css('.counts'));
+	counts = element.query(By.css('.counts-total'));
 	expect(counts.nativeElement.innerHTML).toBe('2');
 
 	component.satellites = [];
 	fixture.detectChanges();
-	counts = element.query(By.css('.counts'));
+	counts = element.query(By.css('.counts-total'));
 	expect(counts.nativeElement.innerHTML).toBe('0');
 	
 
